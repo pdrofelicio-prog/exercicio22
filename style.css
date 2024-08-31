@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Estilo do contador */
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.timer-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #007BFF;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #007BFF;
+    position: relative;
+    box-sizing: border-box;
+    transform: rotate(-90deg);
+}
+
+.timer-text {
+    font-size: 2em;
+    color: #007BFF;
+}
+
+/* Detalhes do evento */
+.details {
+    margin: 20px 0;
+}
+
+.details h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Formulário de confirmação */
+.confirmation-form {
+    margin: 20px 0;
+}
+
+.confirmation-form h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.confirmation-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation-form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.confirmation-form input[type="text"],
+.confirmation-form input[type="email"] {
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-form input[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirmation-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
